@@ -1,4 +1,4 @@
-import romanAvatar from '../client/static/logos/telegram-peer-photo-size-2-5312296541794458116-1-0-0.jpg';
+const romanAvatar = '/logos/telegram-peer-photo-size-2-5312296541794458116-1-0-0.jpg';
 import { BlogUrl, DocsUrl } from '../shared/common';
 import type { GridFeature } from './components/FeaturesGrid';
 

@@ -1,5 +1,5 @@
-import openSaasBannerDark from '../../client/static/open-saas-banner-dark.png';
-import openSaasBannerLight from '../../client/static/open-saas-banner-light.png';
+const openSaasBannerDark = '/open-saas-banner-dark.png';
+const openSaasBannerLight = '/open-saas-banner-light.png';
 import { Button } from '../../components/ui/button';
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
                 </a>
               </Button>
               <Button size='lg' variant='default' asChild>
-                <a href='https://zakazhi.org' target='_blank' rel='noopener noreferrer'>
+                <a href='https://zakazhi.online/mvp/' target='_blank' rel='noopener noreferrer'>
                   Начать <span aria-hidden='true'>→</span>
                 </a>
               </Button>

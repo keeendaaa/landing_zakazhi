@@ -1,11 +1,30 @@
-.wasp/
-node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Ignore all dotenv files by default to prevent accidentally committing any secrets.
-# To include specific dotenv files, use the `!` operator or adjust these rules.
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
 .env
-.env.*
-
-# Don't ignore example dotenv files.
-!.env.example
-!.env.*.example
+.env.local
+.env.production
+.env.development

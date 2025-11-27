@@ -1,6 +1,7 @@
 import HighlightedFeature from './components/HighlightedFeature';
-import aiReadyDark from '../client/static/assets/aiready-dark.png';
-import aiReady from '../client/static/assets/aiready.png';
+
+const aiReadyDark = '/assets/aiready-dark.png';
+const aiReady = '/assets/aiready.png';
 
 export default function AIReady() {
   return (
