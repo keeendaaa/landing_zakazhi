@@ -50,7 +50,63 @@ export default function Hero() {
               />
             </div>
           </div>
+          <ProductFeatures />
         </div>
+      </div>
+    </div>
+  );
+}
+
+function ProductFeatures() {
+  const features = [
+    {
+      icon: '/gear-3d.png',
+      title: 'Оптимизация работы персонала',
+      description: 'Экономия времени официанту за счёт автоматизации выбора и заказа блюд',
+    },
+    {
+      icon: '/rocket-3d.png',
+      title: 'Рост среднего чека',
+      description: 'Готовые подборки стимулируют импульсивные покупки',
+    },
+    {
+      icon: '/clock-3d.png',
+      title: 'Увеличение оборачиваемости столов',
+      description: 'Автоматизация приема заказа сокращает время обслуживания гостя',
+    },
+    {
+      icon: '/lightbulb-3d.png',
+      title: 'Экономия для ресторана на эквайринге',
+      description: 'Побуждает платить через СБП → ресторан экономит на комиссии от эквайринга',
+    },
+  ];
+
+  return (
+    <div className='mt-20 mb-10'>
+      <h2 className='text-3xl md:text-4xl font-bold text-center text-foreground mb-24 md:mb-32'>
+        Наш продукт это:
+      </h2>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 items-stretch'>
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className='bg-card rounded-2xl pt-6 pb-8 px-6 md:pt-44 lg:pt-48 shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-visible flex flex-col'
+          >
+            <div className='flex justify-center mb-6 md:absolute md:-top-32 md:left-1/2 md:transform md:-translate-x-1/2 md:w-full'>
+              <img
+                src={feature.icon}
+                alt={feature.title}
+                className='w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain'
+              />
+            </div>
+            <h3 className='text-xl md:text-2xl font-semibold text-foreground mb-4 text-center flex-shrink-0'>
+              {feature.title}
+            </h3>
+            <p className='text-muted-foreground text-sm md:text-base leading-relaxed text-center flex-grow'>
+              {feature.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

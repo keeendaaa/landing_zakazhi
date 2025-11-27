@@ -27,7 +27,7 @@ const HighlightedFeature = ({
   return (
     <div
       className={cn(
-        'max-w-6xl mx-auto flex flex-col items-center my-50 gap-x-20 gap-y-10 justify-between px-8 md:px-4 transition-all duration-300 ease-in-out',
+        'max-w-6xl mx-auto flex flex-col items-center mb-10 gap-x-20 gap-y-10 justify-between px-8 md:px-4 transition-all duration-300 ease-in-out',
         direction === 'row' ? 'md:flex-row' : 'md:flex-row-reverse'
       )}
     >

@@ -9,7 +9,7 @@ interface FAQ {
 
 export default function FAQ({ faqs }: { faqs: FAQ[] }) {
   return (
-    <div className='mt-32 mx-auto max-w-4xl px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:py-32'>
+    <div className='mt-32 mx-auto max-w-4xl px-6 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pt-32'>
       <h2 className='text-2xl font-bold leading-10 tracking-tight text-foreground text-center mb-12'>
         Часто задаваемые вопросы
       </h2>
